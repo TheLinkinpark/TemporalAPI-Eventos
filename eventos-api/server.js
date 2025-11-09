@@ -7,7 +7,7 @@ const PORT = 3000;
 app.use(express.json(), cors());
 
 // Categorías permitidas
-const CATEGORIAS_PERMITIDAS = ["tecnologia", "animales", "salud", "cine", "anime", "deportes", "musica", "educacion"];
+const CATEGORIAS_PERMITIDAS = ["tecnologia", "ciberseguridad", "ia", "conferencias", "anime", "deportes", "musica", "educacion"];
 
 // "Base de datos" simulada en memoria
 let eventos = [
@@ -27,10 +27,33 @@ let eventos = [
     dateTime: "2025-10-20T14:30:00Z",
     category: "tecnologia",
   },
+  {
+    id: 3,
+    title: "Seminario de Ciberseguridad",
+    description: "Protege tus aplicaciones web",
+    imgURL: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+    dateTime: "2025-10-25T09:00:00Z",
+    category: "ciberseguridad",
+  },
+  {
+    id: 4,
+    title: "Introducción a la Inteligencia Artificial",
+    description: "Conceptos básicos y aplicaciones prácticas",
+    imgURL: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+    dateTime: "2025-10-30T11:00:00Z",
+    category: "ia",
+  }, 
+  {
+    id: 5,
+    title: "Conferencia de Innovación Tecnológica",
+    description: "Explora las últimas tendencias en tecnología e innovación.",
+    imgURL: "https://images.unsplash.com/photo-1531058020387-3be344556be6",
+    dateTime: "2025-11-05T15:00:00Z",
+    category: "conferencias",
+  }
 ];
 
-let siguienteId = 3;
-
+let siguienteId = 6;
 // ============= FUNCIONES AUXILIARES =============
 
 // Función para validar formato ISO 8601

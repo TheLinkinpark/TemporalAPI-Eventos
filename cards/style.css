@@ -5,7 +5,7 @@
 }
 
 :root {
-  --primary-color:#8fae68;
+  --primary-color:#000000;
   --secondary-color:#768465;
   --small-margin: 0.5rem;
 }
@@ -53,13 +53,36 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.naturaleza {
+
+/* COLORES FONDO DE LAS CATEGORÍAS Y TEXTO CONTADORES*/
+.conferencias {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+.contadorconferencias {
+  color: #667eea;
 }
 
 .tecnologia {
-  background: linear-gradient(135deg, #ea7566 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #f18be7 0%, #f45e7e 100%);
 }
+.contadortecnologia {
+  color: #f45e7e;
+}
+
+.ciberseguridad {
+  background: linear-gradient(135deg, #47b3fe 0%, #07ecfe 100%);
+}
+.contadorciberseguridad {
+  color: #47b3fe;
+}
+
+.ia {
+  background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
+}
+.contadoria {
+  color: #f7971e;
+}
+
 
 
 .card-title {

@@ -38,22 +38,22 @@ function createCards(evento) {
 
             <div class="countdown-area">
               <div class="countdown-item">
-                <span class="countdown-value">00</span>
+                <span class="countdown-value contador${evento.category}">00</span>
                 <span class="countdown-label">Días</span>
               </div>
 
               <div class="countdown-item">
-                <span class="countdown-value">00</span>
+                <span class="countdown-value contador${evento.category}">00</span>
                 <span class="countdown-label">Horas</span>
               </div>
 
               <div class="countdown-item">
-                <span class="countdown-value">00</span>
+                <span class="countdown-value contador${evento.category}">00</span>
                 <span class="countdown-label">Minutos</span>
               </div>
 
             <div class="countdown-item">
-                <span class="countdown-value">00</span>
+                <span class="countdown-value contador${evento.category}">00</span>
                 <span class="countdown-label">Segundos</span>
             </div>
           </div>
@@ -75,4 +75,8 @@ function formatEventTime(dateTime) {
     minute: "2-digit",
   };
   return date.toLocaleDateString("es-ES", options).replace(",", " -");
+}
+
+function updateCountdowns() {
+  
 }
