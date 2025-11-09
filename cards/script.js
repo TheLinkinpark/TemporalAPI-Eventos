@@ -1,4 +1,4 @@
-//import { Temporal } from "https://cdn.jsdelivr.net/npm/@js-temporal/polyfill@0.4.4/+esm";
+import { Temporal } from "https://esm.sh/@js-temporal/polyfill";
 
 document.addEventListener("DOMContentLoaded", () => {
   fetchEventos();
@@ -38,7 +38,7 @@ function createCards(evento) {
 
             <div class="countdown-area">
               <div class="countdown-item">
-                <span class="countdown-value contador${evento.category}">00</span>
+                <span class="countdown-value contador${evento.category}">${updateCountdowns(evento.dateTime)}</span>
                 <span class="countdown-label">Días</span>
               </div>
 
@@ -77,6 +77,19 @@ function formatEventTime(dateTime) {
   return date.toLocaleDateString("es-ES", options).replace(",", " -");
 }
 
-function updateCountdowns() {
+function updateCountdowns(eventDate) {
+  const contador = Temporal.Now.plainDateISO();
+  
+  console.log(eventDate);
+  
+
+  const now = Temporal.Now.plainDateISO();
+  console.log(eventDate);
+  
+  const eventDateFormat = Temporal.Instant.from(eventDate); // Uso Instant porque el formato de eventDate viene con zona horaria 
+  console.log(eventDateFormat);
+  
+  return contador
   
 }
+
