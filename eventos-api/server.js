@@ -15,23 +15,25 @@ let eventos = [
     id: 1,
     title: "Conferencia Node.js",
     description: "Aprende lo último en Node.js",
-    imgURL: "https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb",
-    dateTime: "2025-10-16T10:00:00Z",
-    category: "tecnologia",
+    imgURL:
+      "https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb",
+    dateTime: "2025-12-16T10:00:00Z",
+    category: "conferencias",
   },
   {
     id: 2,
     title: "Workshop Express",
     description: "Crea APIs REST con Express",
     imgURL: "https://images.unsplash.com/photo-1623652554515-91c833e3080e",
-    dateTime: "2025-10-20T14:30:00Z",
+    dateTime: "2025-12-20T14:30:00Z",
     category: "tecnologia",
   },
   {
     id: 3,
     title: "Seminario de Ciberseguridad",
     description: "Protege tus aplicaciones web",
-    imgURL: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+    imgURL:
+      "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?",
     dateTime: "2025-10-25T09:00:00Z",
     category: "ciberseguridad",
   },
@@ -40,9 +42,9 @@ let eventos = [
     title: "Introducción a la Inteligencia Artificial",
     description: "Conceptos básicos y aplicaciones prácticas",
     imgURL: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
-    dateTime: "2025-10-30T11:00:00Z",
+    dateTime: "2025-12-30T11:00:00Z",
     category: "ia",
-  }, 
+  },
   {
     id: 5,
     title: "Conferencia de Innovación Tecnológica",
@@ -50,7 +52,7 @@ let eventos = [
     imgURL: "https://images.unsplash.com/photo-1531058020387-3be344556be6",
     dateTime: "2025-11-05T15:00:00Z",
     category: "conferencias",
-  }
+  },
 ];
 
 let siguienteId = 6;

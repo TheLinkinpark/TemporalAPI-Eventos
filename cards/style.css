@@ -5,11 +5,10 @@
 }
 
 :root {
-  --primary-color:#000000;
-  --secondary-color:#768465;
+  --primary-color: #000000;
+  --secondary-color: #768465;
   --small-margin: 0.5rem;
 }
-
 
 body {
   font-family: Arial, sans-serif;
@@ -53,7 +52,6 @@ body {
   margin-bottom: 0.5rem;
 }
 
-
 /* COLORES FONDO DE LAS CATEGORÍAS Y TEXTO CONTADORES*/
 .conferencias {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -82,8 +80,6 @@ body {
 .contadoria {
   color: #f7971e;
 }
-
-
 
 .card-title {
   font-size: 1.5rem;
@@ -141,19 +137,45 @@ body {
 
 .countdown-label {
   font-size: 0.75rem;
-  color:#888;
+  color: #888;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-
 }
 
-@media (max-width:1024px) {
+
+
+/* Estilos para tarjetas expiradas */
+.card.expired .card-img {
+  background-color: #efefef; /* fondo gris claro */
+  border-color: #d0d0d0;
+  color: #777;
+
+  filter: grayscale(100%) brightness(0.75);
+  opacity: 0.9;
+}
+
+.card.expired .category{
+  opacity: 0.9;
+  background: #c5c2c2;
+}
+
+.card.expired .event-date {
+  border-left: 3px solid #999999;
+}
+
+.card.expired .countdown-value,
+.card.expired .card-title,
+.card.expired .card-subtitle {
+  color: #666;
+}
+
+@media (max-width: 1024px) {
   .cards-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width:640px) {
+@media (max-width: 640px) {
   .cards-container {
     grid-template-columns: 1fr;
   }
