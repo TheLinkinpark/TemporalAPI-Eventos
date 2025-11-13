@@ -122,7 +122,13 @@ function formatEventTime(dateTime) {
     hour: "2-digit",
     minute: "2-digit",
   };
-  return date.toLocaleDateString("es-ES", options).replace(",", " -");
+
+  const formatted = date.toLocaleDateString("es-ES", options);
+  const firstComma = formatted.indexOf(",");
+  const secondComma = formatted.indexOf(",", firstComma + 1);
+
+  // Reemplazar sólo la segunda coma
+  return formatted.slice(0, secondComma) + " -" + formatted.slice(secondComma + 1);
 }
 
 function updateCountdowns(eventDate) {
